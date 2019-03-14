@@ -1,0 +1,2 @@
+# PracticeSess
+integrating with intelliJ
