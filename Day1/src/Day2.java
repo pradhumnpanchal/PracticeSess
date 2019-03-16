@@ -1,12 +1,19 @@
+import java.awt.*;
 import java.util.*;
 import javax.swing.*;
 public class Day2 {
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
         JFrame frame  = new JFrame("ItelliJ");
-        JLabel label = new JLabel("Its day 2 GUI");
-        label.setBounds(0,0,25,2);
+        //JPanel panel = new JPanel();
+        String str = s.nextLine();
+        JLabel label = new JLabel(str);
+        label.setBounds(50,50,250,20);
         frame.add(label);
-        frame.setSize(50,50);
+        //panel.add(label);
+        frame.setSize(250,250);
+        frame.getContentPane().setBackground(Color.pink);
+        frame.setLayout(null);
         frame.setVisible(true);
     }
 }
