@@ -1,6 +1,6 @@
 # PracticeSess
 integrating with intelliJ.
-thinking for a 30 day practice.
+thinking for a 30 days practice.
 messed up with intellij.
 skipped day 2 (travelling to home).
 pushed a stupid GUI. 
