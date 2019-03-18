@@ -8,7 +8,7 @@ public class JavaJDBC {
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("SELECT * FROM example");
             while(rs.next()) {
-                System.out.println(rs.getString(1));
+                System.out.println(rs.getString(1)+" "+rs.getInt(2));
             }
             con.close();
         }catch(Exception e){ System.out.println(e);}
