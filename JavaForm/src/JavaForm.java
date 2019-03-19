@@ -26,7 +26,7 @@ public class JavaForm implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        String str = "";
+        String str = "yeah";
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con= DriverManager.getConnection(
@@ -35,7 +35,7 @@ public class JavaForm implements ActionListener {
             ResultSet rs=stmt.executeQuery("SELECT * FROM example");
             while(rs.next()) {
                 //System.out.println(rs.getString(1)+" "+rs.getInt(2));
-                str += rs.getString(1) + " " ;}
+                str = str + " " +rs.getString(1) ;}
             con.close();
         }catch(Exception e1){ System.out.println(e);}
         a.setText(str.trim());
